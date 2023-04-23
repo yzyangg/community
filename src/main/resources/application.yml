@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/community?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 2002
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # redis
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    # kafka
+    kafka:
+      consumer:
+        bootstrap-servers: localhost:9092
+        enable-auto-commit: true
+        auto-commit-interval: 1000
+        group-id: community-consumer-group
+
+  elasticsearch:
+    uris: http://localhost:9200
+    username: root
+    password: 2002
+jwt:
+  key: yzy  #jwt生成token时的密钥
+  expiration: 5000000  #token 5秒超时
