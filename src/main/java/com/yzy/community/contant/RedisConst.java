@@ -13,4 +13,6 @@ public interface RedisConst {
 
     String FOLLOWEE_KEY = "followee:";
     String FOLLOWER_KEY = "follower:";
+
+    String CACHE_POST_KEY = "cache:post:";
 }

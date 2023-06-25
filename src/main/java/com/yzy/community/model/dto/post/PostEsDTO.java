@@ -72,6 +72,11 @@ public class PostEsDTO implements Serializable {
      */
     @Field(type = FieldType.Date, pattern = DATE_TIME_PATTERN)
     private Date createTime;
+    /**
+     * 创建时间
+     */
+    @Field(type = FieldType.Date, pattern = DATE_TIME_PATTERN)
+    private Date updateTime;
 
     /**
      *
